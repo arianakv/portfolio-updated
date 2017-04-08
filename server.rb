@@ -1,6 +1,5 @@
 require 'sinatra'
 
 get '/' do
-  html: index
-  css: style
+  File.read(File.join('public', 'index.html', 'style.css'))
 end
