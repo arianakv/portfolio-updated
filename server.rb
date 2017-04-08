@@ -1,9 +1,6 @@
 require 'sinatra'
 
 get '/' do
-  "hello world!"
-end
-
-get "/sinatra" do
-  "hello Sinatra!"
+  html: index
+  css: style
 end
